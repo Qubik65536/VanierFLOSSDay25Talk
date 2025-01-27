@@ -37,6 +37,7 @@
   project-url: "URL to project",
   qr-caption: text(font: "Excalifont")[My project on GitHub],
   contact-appeal: [Get in touch #emoji.hand.wave],
+  // leave out any of the following if they don't apply to you:
   email: "foo@bar.org",
   mastodon: "@foo@baz.org",
   website: "bar.org"

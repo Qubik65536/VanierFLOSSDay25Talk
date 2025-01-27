@@ -2,7 +2,7 @@
 name = "friendly-polylux"
 version = "0.1.0"
 entrypoint = "friendly.typ"
-authors = ["Andreas Kröpelin", "Enivex"]
+authors = ["Andreas Kröpelin"]
 license = "MIT"
 description = "Metropolis style template for Polylux"
 repository = "https://github.com/polylux-typ/friendly"

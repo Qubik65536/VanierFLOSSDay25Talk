@@ -15,20 +15,21 @@ typst init @preview/friendly-polylux your-cool-project
 
 A `slides.typ` file will be created for you that you can directly edit to get
 going.
+The template features a prominent title slide as well as a dedicated last slide
+that you can configure.
+These display QR codes for better accessibility for your audience.
+Generating these QR codes happens behind the scenes using [the tiaoma package](
+https://typst.app/universe/package/tiaoma).
 
-At the top of the generated `slides.typ`, you will find
-```typ
-#show: friendly.setup.with(
-  // ...
-)
-```
-which you can edit to configure the template
+Read the [Polylux book](https://polylux.dev/book) to see what you can do with
+Polylux.
 
 ## Fonts
 
 By default, the template uses the fonts
 [Andika](https://software.sil.org/andika/download/),
 [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans/releases),
+[Lete Sans Math](https://github.com/abccsss/LeteSansMath/releases),
 and
 [Excalifont](https://plus.excalidraw.com/excalifont).
 Either make sure you have them installed or specify other fonts in the template.

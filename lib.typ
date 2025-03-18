@@ -1,5 +1,5 @@
 #import "@preview/polylux:0.4.0": *
-#import "@preview/tiaoma:0.2.1"
+#import "@preview/tiaoma:0.3.0"
 
 #import "icons/icons.typ"
 

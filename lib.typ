@@ -37,15 +37,15 @@
     text(
       size: .8em,
       fill: accent1,
-      sym.triangle.small.stroked.r + sym.space + title
+      sym.triangle.small.stroked.r + sym.space + title,
     ),
     block(
       inset: 10pt,
       width: 100%,
       stroke: 2pt + accent1.lighten(50%),
       ..kwargs.named(),
-      body
-    )
+      body,
+    ),
   )
 }
 
@@ -92,44 +92,49 @@
   set align(horizon)
   grid(
     columns: (1fr, 2fr),
-    rows: (100%, ),
+    rows: (100%,),
     gutter: 1em,
-    grid.cell(inset: (top: 2em, bottom: 1em, left: .5em), align: right, {
-      show image: set block(spacing: 0pt)
+    grid.cell(
+      inset: (top: 2em, bottom: 1em, left: .5em),
+      align: right,
+      {
+        show image: set block(spacing: 0pt)
 
-      if slides-url != none {
-        toolbox.side-by-side(
-          {
-            show: rotate.with(-10deg)
-            set text(size: .6em)
-            qr-caption
-            sym.space
-            icons.right-arrow
-          },{
-            set image(width: 100%)
-            tiaoma.barcode(
-              slides-url,
-              "QRCode",
-              options: ( fg-color: accent2, bg-color: none, )
-            )
-          }
-        )
-      }
+        if slides-url != none {
+          toolbox.side-by-side(
+            {
+              show: rotate.with(-10deg)
+              set text(size: .6em)
+              qr-caption
+              sym.space
+              icons.right-arrow
+            },
+            {
+              set image(width: 100%)
+              tiaoma.barcode(
+                slides-url,
+                "QRCode",
+                options: (fg-color: accent2, bg-color: none),
+              )
+            },
+          )
+        }
 
-      v(1fr)
-      if logo == auto {
-        rect(width: 100%, height: 3em)[
-          #set text(size: .3em)
-          (specify `logo:` in `title-slide` to replace this by your logo, or
-          set it to `none` to show nothing)
-        ]
-      } else if logo == none {
-        // do nothing
-      } else {
-        logo
-      }
-    }), grid.cell(fill: accent1, inset: 1em, align: left)[
-      #set text(fill: white,)
+        v(1fr)
+        if logo == auto {
+          rect(width: 100%, height: 3em)[
+            #set text(size: .3em)
+            (specify `logo:` in `title-slide` to replace this by your logo, or
+            set it to `none` to show nothing)
+          ]
+        } else if logo == none {
+          // do nothing
+        } else {
+          logo
+        }
+      },
+    ), grid.cell(fill: accent1, inset: 1em, align: left)[
+      #set text(fill: white)
       #title
 
       #v(1cm)
@@ -168,14 +173,14 @@
       tiaoma.barcode(
         project-url,
         "QRCode",
-        options: ( fg-color: accent2, bg-color: none, ),
+        options: (fg-color: accent2, bg-color: none),
       )
       show: rotate.with(5deg)
       set text(size: .6em)
       icons.up-arrow
       qr-caption
     },
-    get-in-touch(title: contact-appeal, ..args.named())
+    get-in-touch(title: contact-appeal, ..args.named()),
   )
 
   v(1fr)

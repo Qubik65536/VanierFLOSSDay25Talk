@@ -6,8 +6,9 @@
 #import friendly: titled-block
 
 #show: friendly.setup.with(
-  short-title: [Short title],
-  short-speaker: [Short speaker],
+  short-title: [Free/Libre and Open Source Software: How to get started?],
+  short-speaker: [Qubik65536],
+  logo: [#box(image("../images/logo.png", width: 2em))]
 )
 
 #set text(size: 18pt, font: "IBM Plex Serif")
@@ -31,7 +32,7 @@
   logo: [
     #align(left)[
       #stack(
-        spacing: 0.25em,
+        spacing: 0.5em,
         text(size: 8pt)[
           Content licensed under Creative Commons *Attribution-NonCommercial-NoDerivatives 4.0* International License.
         ],
@@ -39,13 +40,14 @@
           #stack(
               dir: ltr,
               spacing: 0.25em,
-              box(image("../images/logo.png", width: 2em)),
+              box(image("../images/logo.png", width: 2.1em)),
+              h(1fr),
               icons.cc,
               icons.cc-by,
               icons.cc-nc,
               icons.cc-nd
           )
-      ]
+        ]
       )
     ]
   ],
@@ -62,13 +64,15 @@
   ]
 ]
 
+#set text(size: 24pt, font: "Monaspace Radon")
 #friendly.last-slide(
-  title: [That's it!],
+  title: text(font: "IBM Plex Serif")[That's it!],
   project-url: "https://github.com/Qubik65536/VanierFLOSSDay25Talk",
-  qr-caption: text(font: "Monaspace Radon")[My project on GitHub],
+  qr-caption: [ The Slide on GitHub],
   contact-appeal: [Get in touch #emoji.hand.wave],
+  logo: [#box(image("../images/logo.png", width: 3em))],
   // leave out any of the following if they don't apply to you:
-  email: "foo@bar.org",
-  mastodon: "@foo@baz.org",
-  website: "bar.org"
+  email: "me@qubik.top",
+  website: "https://qubik65536.top",
+  github: "Qubik65536",
 )

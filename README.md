@@ -16,4 +16,6 @@ This slide is built based on the [Polylux](https://polylux.dev/book/) package an
 
 [IBM Plex](https://www.ibm.com/plex/) and [GitHub Monaspace](https://monaspace.githubnext.com/) fonts are used in the slide. They are both licensed under the SIL OPEN FONT LICENSE Version 1.1.
 
-Creative Commons logos/badges/icons are contained in this project. They are downloaded directly from the [Creative Commons website](https://creativecommons.org/mission/downloads/) and within the authorized use cases by the [Creative Commons Trademark Policy](https://creativecommons.org/policies/)
+Creative Commons logos/badges/icons are contained in this project. They are downloaded directly from the [Creative Commons website](https://creativecommons.org/mission/downloads/) and within the authorized use cases by the [Creative Commons Trademark Policy](https://creativecommons.org/policies/).
+
+Icons by [Font Awesome](https://fontawesome.com/).

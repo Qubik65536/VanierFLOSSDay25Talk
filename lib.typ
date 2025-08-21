@@ -12,7 +12,7 @@
   title: [Get in touch!],
   email: none,
   website: none,
-  mastodon: none,
+  github: none,
 ) = {
   let rows = (
     if email != none {
@@ -21,8 +21,8 @@
     if website != none {
       (icons.www, website)
     } else { () },
-    if mastodon != none {
-      (icons.mastodon, mastodon)
+    if github != none {
+      (icons.github, link("https://github.com/" + github)[#github])
     } else { () },
   ).flatten()
 
@@ -53,14 +53,19 @@
   body,
   short-title: [],
   short-speaker: [],
+  logo: none,
 ) = {
   set page(
     paper: "presentation-16-9",
-    margin: 1em,
+    margin: (top: 1em, bottom: 3em, left: 1em, right: 1em),
     footer: {
       set align(bottom)
-      show: pad.with(bottom: .2em)
-      set text(size: .5em, fill: gray)
+      show: pad.with(bottom: 0.75em)
+      set text(size: 12pt, font: "IBM Plex Serif", fill: gray)
+      if (logo != none) {
+        logo
+        h(1fr)
+      }
       short-title
       h(1fr)
       short-speaker
@@ -159,8 +164,40 @@
   project-url: none,
   qr-caption: [],
   contact-appeal: [Get in touch!],
+  logo: none,
   ..args,
 ) = slide({
+  set page(
+    margin: (top: 1em, bottom: 3.5em, left: 1em, right: 1em),
+    footer: {
+      if (logo != none) {
+        set align(bottom)
+        show: pad.with(bottom: 0.75em)
+        set text(size: 12pt, font: "IBM Plex Serif")
+        stack(
+          dir: ltr,
+          spacing: 0.5em,
+          stack(
+            spacing: 0.5em,
+            text[Content licensed under Creative Commons *Attribution-NonCommercial-NoDerivatives 4.0* International License.],
+            stack(
+              dir: ltr,
+              spacing: 0.25em,
+              icons.cc,
+              icons.cc-by,
+              icons.cc-nc,
+              icons.cc-nd
+            )
+          ),
+          h(1fr),
+          logo
+        )
+      } else {
+        none
+      }
+    }
+  )
+
   heading(level: 1, title)
 
   v(1fr)

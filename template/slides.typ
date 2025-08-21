@@ -7,7 +7,6 @@
 
 #show: friendly.setup.with(
   short-title: [Free/Libre and Open Source Software: How to get started?],
-  short-speaker: [Qubik65536],
   logo: [#box(image("../images/logo.png", width: 2em))]
 )
 

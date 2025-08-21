@@ -52,7 +52,7 @@
 #let setup(
   body,
   short-title: [],
-  short-speaker: [],
+  short-speaker: none,
   logo: none,
 ) = {
   set page(
@@ -68,8 +68,10 @@
       }
       short-title
       h(1fr)
-      short-speaker
-      h(2fr)
+      if (short-speaker != none) {
+        short-speaker
+        h(2fr)
+      }
       toolbox.slide-number
     },
   )

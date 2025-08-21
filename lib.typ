@@ -3,10 +3,10 @@
 
 #import "icons/icons.typ"
 
-#let accent1 = rgb("637A9F")
-#let accent2 = rgb("E8C872")
-#let accent3 = rgb("80B9AD")
-#let accent4 = rgb("B3E2A7")
+#let accent1 = rgb("56728B")
+#let accent2 = rgb("56728B")
+#let accent3 = rgb("56728B")
+#let accent4 = rgb("56728B")
 
 #let get-in-touch(
   title: [Get in touch!],

@@ -1,6 +1,8 @@
 #import "@preview/polylux:0.4.0": *
 // #import "@preview/friendly-polylux:0.1.0" as friendly
 #import "../friendly.typ" as friendly
+#import "../icons/icons.typ"
+
 #import friendly: titled-block
 
 #show: friendly.setup.with(
@@ -8,18 +10,45 @@
   short-speaker: [Short speaker],
 )
 
-#set text(size: 30pt, font: "IBM Plex Serif")
+#set text(size: 18pt, font: "IBM Plex Serif")
 #show raw: set text(font: "Monaspace Krypton")
 #show math.equation: set text(font: "IBM Plex Math")
 
 #friendly.title-slide(
-  title: [Title],
-  speaker: [Speaker],
-  conference: [The Conference],
-  speaker-website: "url-to-the-speaker.org", // use `none` to disable
-  slides-url: "URL to slides", // use `none` to disable
+  title: [
+    = Free/Libre and Open Source Software:
+    #text(size: 48pt)[How to get started?]
+  ],
+  speaker: [Qian Qian (\@Qubik65536)],
+  conference: [
+    Vanier FLOSS Day 25 \
+    Tuesday, October 14#super[th], 2025\
+    Montreal, Quebec, Canada
+  ],
+  speaker-website: "https://qubik.top", // use `none` to disable
+  slides-url: none, // use `none` to disable
   qr-caption: text(font: "Monaspace Radon")[Get these slides],
-  logo: auto,
+  logo: [
+    #align(left)[
+      #stack(
+        spacing: 0.25em,
+        text(size: 8pt)[
+          Content licensed under Creative Commons *Attribution-NonCommercial-NoDerivatives 4.0* International License.
+        ],
+        text(size: 18pt)[
+          #stack(
+              dir: ltr,
+              spacing: 0.25em,
+              box(image("../images/logo.png", width: 2em)),
+              icons.cc,
+              icons.cc-by,
+              icons.cc-nc,
+              icons.cc-nd
+          )
+      ]
+      )
+    ]
+  ],
 )
 
 #slide[

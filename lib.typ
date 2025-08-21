@@ -91,7 +91,7 @@
   set page(margin: 0pt, footer: none)
   set align(horizon)
   grid(
-    columns: (1fr, 2fr),
+    columns: (25%, 75%),
     rows: (100%,),
     gutter: 1em,
     grid.cell(
@@ -135,6 +135,7 @@
       },
     ), grid.cell(fill: accent1, inset: 1em, align: left)[
       #set text(fill: white)
+      #set align(bottom)
       #title
 
       #v(1cm)

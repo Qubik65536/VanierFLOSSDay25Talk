@@ -52,15 +52,71 @@
   ],
 )
 
+// #slide[
+//   = My first slide
+//   With some maths: $x^2 + y^2 = z^2$
+
+//   And some code: `Typst *rocks*!`
+
+//   #titled-block(title: [A block])[
+//     Some important content
+//   ]
+// ]
+
 #slide[
-  = My first slide
-  With some maths: $x^2 + y^2 = z^2$
+  #show: friendly.focus
 
-  And some code: `Typst *rocks*!`
+  #text(size: 36pt)[*Remember:*]
+  
+  1. It's not just about the code.
+  2. It doesn't have to be big.
+]
 
-  #titled-block(title: [A block])[
-    Some important content
+#slide[
+  = Why contribute?
+
+  - Help improving the software —— that *you* are using.
+  - Learn new skills & Gain experience.
+    - Code
+    - Documentation/Writing
+    - Design
+    - Testing
+    - Community Building
+    - Team Work
+  - Meet new people & Make friends.
+  - Build your portfolio.
+  - Get recognized or even paid.
+  - Have fun!
+]
+
+#slide[
+  #show: friendly.focus
+
+  *"How do I start contributing?"* \
+  based on _my own_ experiences
+]
+
+#slide[
+  #align(horizon + center)[
+    #text(size: 36pt)[*"What can I do?"*]
   ]
+]
+
+#slide[
+  = What kind of contributions can you make?
+
+  #align(horizon + center)[
+    #text(size: 36pt)[*>`code_`*]
+  ]
+]
+
+#slide[
+  #show: friendly.focus
+
+  #text(size: 36pt)[*Remember:*]
+  
+  1. It's *not* just about the code.
+  2. It *doesn't* have to be big.
 ]
 
 #set text(size: 24pt, font: "Monaspace Radon")

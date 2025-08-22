@@ -4,5 +4,6 @@
   titled-block,
   setup,
   title-slide,
+  focus,
   last-slide,
 )

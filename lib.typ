@@ -161,6 +161,17 @@
   )
 })
 
+#let focus(body) = context {
+  set page(
+    header: none,
+    fill: accent1,
+    margin: (top: 3.5em, bottom: 3.5em, left: 1em, right: 1em)
+  )
+  set text(fill: white, size: 1.5em)
+  set align(horizon + center)
+  body
+}
+
 #let last-slide(
   title: [],
   project-url: none,

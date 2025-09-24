@@ -7,7 +7,7 @@
 
 #show: friendly.setup.with(
   short-title: [Free/Libre and Open Source Software: How to get started?],
-  logo: [#box(image("images/logo.png", width: 2em))]
+  logo: [#box(image("images/logo.png", width: 2em))],
 )
 
 #set text(size: 18pt, font: "IBM Plex Serif")
@@ -37,16 +37,16 @@
         ],
         text(size: 18pt)[
           #stack(
-              dir: ltr,
-              spacing: 0.25em,
-              box(image("images/logo.png", width: 2.1em)),
-              h(1fr),
-              icons.cc,
-              icons.cc-by,
-              icons.cc-nc,
-              icons.cc-nd
+            dir: ltr,
+            spacing: 0.25em,
+            box(image("images/logo.png", width: 2.1em)),
+            h(1fr),
+            icons.cc,
+            icons.cc-by,
+            icons.cc-nc,
+            icons.cc-nd,
           )
-        ]
+        ],
       )
     ]
   ],
@@ -67,7 +67,7 @@
   #show: friendly.focus
 
   #text(size: 36pt)[*Remember:*]
-  
+
   1. It's not just about the code.
   2. It doesn't have to be big.
 ]
@@ -111,15 +111,6 @@
 ]
 
 #slide[
-  #show: friendly.focus
-
-  #text(size: 36pt)[*Remember:*]
-  
-  1. It's *not* just about the code.
-  2. It *doesn't* have to be big.
-]
-
-#slide[
   = What kind of contributions can you make?
 
   #align(horizon + center)[
@@ -129,43 +120,99 @@
   #place(
     move(dx: 12em, dy: -7em)[
       #text(size: 28pt)[bug reports]
-    ]
+    ],
   )
   #place(
     move(dx: 12em, dy: 3.2em)[
       #text(size: 28pt)[documentation]
-    ]
+    ],
   )
   #place(
     move(dx: 30em, dy: -3.6em)[
       #text(size: 28pt)[beta testing]
-    ]
+    ],
   )
   #place(
     move(dx: 32em, dy: 1.6em)[
       #text(size: 28pt)[translation]
-    ]
+    ],
   )
   #place(
     move(dx: 26em, dy: 6.4em)[
       #text(size: 28pt)[design]
-    ]
+    ],
   )
   #place(
     move(dx: 3em, dy: -2.1em)[
       #text(size: 28pt)[marketing]
-    ]
+    ],
   )
   #place(
     move(dx: 3em, dy: 7.5em)[
       #text(size: 28pt)[community support]
-    ]
+    ],
   )
   #place(
     move(dx: 28em, dy: -8.5em)[
       #text(size: 28pt)[event organization]
-    ]
+    ],
   )
+]
+
+#slide[
+  #show: friendly.focus
+
+  #text(size: 36pt)[*Code is only one part of open source.*]
+
+  #text(size: 16pt, align(right)[
+    By Pratham Patel, posted on IT’S FOSS. \
+    https://itsfoss.com/hacktoberfest-guide/
+  ])
+]
+
+#slide[
+  #show: friendly.focus
+
+  #align(left, text(size: 24pt)[
+    *You don't have to contribute code:*\
+    A common _misconception_ about contributing to open source is that you need to contribute code.
+    In fact, it's often the other parts of a project that are most neglected or overlooked.
+    You'll do the project a huge favor by offering to pitch in with these types of contributions!
+  ])
+
+  #text(size: 16pt, align(right)[
+    Open Source Guides: How to Contribute to Open Source\
+    https://opensource.guide/how-to-contribute/
+  ])
+]
+
+#slide[
+  #show: friendly.focus
+
+  #align(left, text(size: 24pt)[
+    I’ve been renowned for my work on CocoaPods, but most people don't know that I actually don't do any real work on the CocoaPods tool itself. My time on the project is mostly spent doing things like documentation and working on branding.
+  ])
+
+  #text(size: 16pt, align(right)[
+    \@orta, “Moving to OSS by default”\
+    Open Source Guides: How to Contribute to Open Source\
+    https://opensource.guide/how-to-contribute/
+  ])
+]
+
+#slide[
+  #show: friendly.focus
+
+  #text(size: 36pt)[*Remember:*]
+
+  1. It's *not* just about the code.
+  2. It *doesn't* have to be big.
+]
+
+#slide[
+  #align(horizon + center)[
+    #text(size: 36pt)[*"How do I get started?"*]
+  ]
 ]
 
 #set text(size: 24pt, font: "Monaspace Radon")

@@ -77,7 +77,19 @@
   )
   show heading.where(level: 1): underline.with(
     background: true,
-    stroke: (thickness: .3em, paint: accent2.lighten(50%), cap: "round"),
+    stroke: (thickness: .3em, paint: accent2.lighten(30%), cap: "round"),
+    evade: false,
+    extent: .2em,
+  )
+  show heading.where(level: 2): underline.with(
+    background: true,
+    stroke: (thickness: .2em, paint: accent2.lighten(30%), cap: "round"),
+    evade: false,
+    extent: .2em,
+  )
+  show heading.where(level: 3): underline.with(
+    background: true,
+    stroke: (thickness: .2em, paint: accent2.lighten(50%), cap: "round"),
     evade: false,
     extent: .2em,
   )
